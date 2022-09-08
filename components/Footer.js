@@ -1,15 +1,16 @@
-import { TextareaAutosize, TextField } from '@mui/material';
+import { IconButton, TextareaAutosize, TextField } from '@mui/material';
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import styled from 'styled-components';
-
-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 
 const HomePagePro = () => {
   return (
     <>
-      <div className='bg-[#0081FE] min-h-[40vh] p-10 justify-center flex items-center'>
+      <div className='bg-[#0081FE] min-h-[40vh] p-12 justify-center flex items-center'>
         <div className='relative'>
           <img src="/images/blob.png" className='w-[70%] mx-auto p-6' />
           <div className='absolute top-[35%] left-[20%] spacing-y-5'>
@@ -49,6 +50,19 @@ const HomePagePro = () => {
               </div>
 
             </div>
+          </div>
+          <div className='absolute bottom-[-10%] right-2 py-4'>
+               <div className='flex items-center space-x-4'>
+                     <IconButton>
+                         <WhatsAppIcon className="text-green-400"/>
+                     </IconButton>
+                     <IconButton>
+                         <InstagramIcon className="text-red-400"/>
+                     </IconButton>
+                     <IconButton>
+                         <FacebookIcon className="text-blue-400"/>
+                     </IconButton>
+               </div>
           </div>
         </div>
       </div>
