@@ -42,6 +42,9 @@ const Withdrawal = () => {
                             <div className='space-y-3'>
                                 <button className="bg-[#E51B48] w-4/5 py-2 px-3 rounded-md text-white" onClick={handleOpen}>Submit</button>
                             </div>
+                            <div className='space-y-3'>
+                                <button className="border-[#E51B48] border border-1 w-4/5 py-2 px-3 rounded-md text-[#E51B48]">Request Withdrawal</button>
+                            </div>  
                         </Stack>
                     </div>
                 </div>
